@@ -21,6 +21,7 @@ html {
 
     h1 { // "Harry Rowlands"
         font-size: 6vw;
+        white-space: nowrap;
     }
 
     p { // Subtitle description
@@ -29,7 +30,6 @@ html {
 }
 
 .welcome {
-    margin: 1vw;
     padding: 4vw;
     font-size: 2vw;
     img {
@@ -41,4 +41,27 @@ html {
 
 .summary {
     background-color: lightgrey;
+    margin: 2vw;
+    padding: 4vw;
+}
+
+.skill{
+    position: relative;
+    
+
+    img:hover {
+        opacity: 0;
+        transition: .5s ease;
+    }
+    background-color: red;
+    img:not(:hover) {
+        transition: .5s ease;
+    }
+
+    .description {
+        background-color: orange;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
 }
